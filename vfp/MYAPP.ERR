@@ -1,0 +1,36 @@
+Program c:\users\carloseduardo\documents\vfp\arranca.prg has the following errors:
+    Form CLAVEIN - Undefined
+    Proc./Func. UNIVERSA - Undefined
+    Form LOGIN - Undefined
+    Proc./Func. E - Undefined
+
+Program f:\premium\hoteles\universahotel.prg has the following errors:
+    Program COMPROB_FISCAL_BEMATECH_PANAMA - Undefined
+    Program FUNCIONESFISCALESOKI - Undefined
+    Program COMPROB_FISCAL_SEWOO - Undefined
+    Program COMPROBFISCALHASAR - Undefined
+    Program CENTROPROCESOSFISCALES - Undefined
+    Program COMPROB_FISCAL_PANAMA - Undefined
+    Program NEWPERSONALIZADOR - Undefined
+    Program CALCULAFAC - Undefined
+    Program NUEVA_BASE_DATOS - Undefined
+    Program CONVERTNEWDATA - Undefined
+    Program OBTENERIP - Undefined
+    Unknown HEX2RGB - Undefined
+    Unknown LEECFGFISCAL - Undefined
+    Unknown LIBERADLL - Undefined
+    Unknown DECLARADLL - Undefined
+    Form CREAODBC - Undefined
+    Form SELPATH - Undefined
+    Unknown CHECKPATHPREMIUMDATASQL - Undefined
+    Unknown MYSQLCONNECT - Undefined
+    Proc./Func. ACTUALIZACONFIG - Undefined
+    Unknown _PSNEW2003AGEGNLC - Undefined
+    Proc./Func. ACTUALIZAMAXHAB - Undefined
+    Unknown INTERCEPTAERRORES - Undefined
+    Form SEVENCE - Undefined
+    Unknown NUMEROSTRING - Undefined
+
+Program e:\dropbox\proyectos de visual foxpro\colibs\prg\coproclibs.prg has the following errors:
+    Form SWAPING - Undefined
+

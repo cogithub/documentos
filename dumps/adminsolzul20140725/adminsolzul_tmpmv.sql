@@ -1,0 +1,119 @@
+CREATE DATABASE  IF NOT EXISTS `adminsolzul` /*!40100 DEFAULT CHARACTER SET utf8 */;
+USE `adminsolzul`;
+-- MySQL dump 10.13  Distrib 5.6.17, for Win32 (x86)
+--
+-- Host: soporte2    Database: adminsolzul
+-- ------------------------------------------------------
+-- Server version	5.1.42-community
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `tmpmv`
+--
+
+DROP TABLE IF EXISTS `tmpmv`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tmpmv` (
+  `id_empresa` varchar(6) NOT NULL,
+  `agencia` varchar(3) DEFAULT ' ',
+  `tipodoc` varchar(3) DEFAULT ' ',
+  `documento` varchar(8) DEFAULT ' ',
+  `grupo` varchar(6) DEFAULT ' ',
+  `subgrupo` varchar(6) DEFAULT ' ',
+  `origen` double(2,0) NOT NULL DEFAULT '0',
+  `codigo` varchar(25) DEFAULT ' ',
+  `codhijo` varchar(25) DEFAULT ' ',
+  `pid` varchar(12) DEFAULT ' ',
+  `nombre` varchar(80) DEFAULT ' ',
+  `costounit` double(20,7) NOT NULL DEFAULT '0.0000000',
+  `preciounit` double(20,7) NOT NULL DEFAULT '0.0000000',
+  `diferencia` double(20,7) NOT NULL DEFAULT '0.0000000',
+  `dsctounit` double(20,7) NOT NULL DEFAULT '0.0000000',
+  `dsctoprc` double(20,7) NOT NULL DEFAULT '0.0000000',
+  `dsctoendm` double(20,7) NOT NULL DEFAULT '0.0000000',
+  `dsctoendp` double(20,7) NOT NULL DEFAULT '0.0000000',
+  `preciofin` double(20,7) NOT NULL DEFAULT '0.0000000',
+  `prcrecargo` double(20,7) NOT NULL DEFAULT '0.0000000',
+  `recargouni` double(20,7) NOT NULL DEFAULT '0.0000000',
+  `precioorig` double(20,7) NOT NULL DEFAULT '0.0000000',
+  `cantidad` double(20,7) NOT NULL DEFAULT '0.0000000',
+  `cntdevuelt` double(20,7) NOT NULL DEFAULT '0.0000000',
+  `cntentrega` double(20,7) NOT NULL DEFAULT '0.0000000',
+  `tallas` varchar(3) DEFAULT ' ',
+  `colores` varchar(3) DEFAULT ' ',
+  `montoneto` double(20,7) NOT NULL DEFAULT '0.0000000',
+  `montototal` double(20,7) NOT NULL DEFAULT '0.0000000',
+  `almacen` varchar(2) DEFAULT ' ',
+  `proveedor` varchar(20) DEFAULT ' ',
+  `fechadoc` date NOT NULL DEFAULT '0000-00-00',
+  `impuesto1` double(20,7) NOT NULL DEFAULT '0.0000000',
+  `impuesto2` double(20,7) NOT NULL DEFAULT '0.0000000',
+  `impuesto3` double(20,7) NOT NULL DEFAULT '0.0000000',
+  `impuesto4` double(20,7) NOT NULL DEFAULT '0.0000000',
+  `impuesto5` double(20,7) NOT NULL DEFAULT '0.0000000',
+  `impuesto6` double(20,7) NOT NULL DEFAULT '0.0000000',
+  `timpueprc` double(20,7) NOT NULL DEFAULT '0.0000000',
+  `impu_mto` double(20,7) NOT NULL DEFAULT '0.0000000',
+  `comision` double(20,7) NOT NULL DEFAULT '0.0000000',
+  `comisprc` double(20,7) NOT NULL DEFAULT '0.0000000',
+  `vendedor` varchar(8) DEFAULT ' ',
+  `emisor` varchar(8) DEFAULT ' ',
+  `usaserial` double(2,0) NOT NULL DEFAULT '0',
+  `tipoprecio` double(2,0) NOT NULL DEFAULT '0',
+  `unidad` varchar(25) DEFAULT ' ',
+  `agrupado` double(2,0) NOT NULL DEFAULT '0',
+  `cntagrupad` double(20,7) NOT NULL DEFAULT '0.0000000',
+  `seimporto` double(4,0) NOT NULL DEFAULT '0',
+  `desdeimpor` varchar(11) DEFAULT ' ',
+  `notas` text,
+  `oferta` double(4,0) NOT NULL DEFAULT '0',
+  `compuesto` double(2,0) NOT NULL DEFAULT '0',
+  `usaexist` double(2,0) NOT NULL DEFAULT '0',
+  `marca` double(4,0) NOT NULL DEFAULT '0',
+  `aux1` double(20,7) NOT NULL DEFAULT '0.0000000',
+  `estacion` varchar(3) DEFAULT ' ',
+  `clasifica` double(2,0) NOT NULL DEFAULT '0',
+  `cuentacont` varchar(40) DEFAULT ' ',
+  `placa` varchar(20) DEFAULT ' ',
+  `udinamica` double(2,0) NOT NULL DEFAULT '0',
+  `cantref` double(20,7) NOT NULL DEFAULT '0.0000000',
+  `unidadref` varchar(15) DEFAULT ' ',
+  `baseimpo1` double(20,7) NOT NULL DEFAULT '0.0000000',
+  `baseimpo2` double(20,7) NOT NULL DEFAULT '0.0000000',
+  `baseimpo3` double(20,7) NOT NULL DEFAULT '0.0000000',
+  `lote` varchar(30) DEFAULT ' ',
+  `imp_nacion` double(20,7) NOT NULL DEFAULT '0.0000000',
+  `imp_produc` double(20,7) NOT NULL DEFAULT '0.0000000'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tmpmv`
+--
+
+LOCK TABLES `tmpmv` WRITE;
+/*!40000 ALTER TABLE `tmpmv` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tmpmv` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2014-07-25 10:24:55
