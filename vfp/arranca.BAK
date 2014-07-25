@@ -1,3 +1,6 @@
+*--- arranca
+*--- para premium hoteles
+
 Para xsistema
 Close Tables All
 Close Databases All
@@ -105,8 +108,8 @@ Case xsistema="HOTEL"
 	Store Space(1) To pcompilaid
 	Set Database To
 	Dimension afiles[1]
-	Agetfileversion(afiles,"Premium.exe")
-	pcompilaid   = afiles(4)
+	*Agetfileversion(afiles,"Premium.exe")
+	*pcompilaid   = afiles(4)
 *--------------------------------------------
 
 
